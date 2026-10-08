@@ -68,6 +68,8 @@
 
     <!-- ===== БЛОК: Первый экран ===== -->
     <section class="hero">
+      <!-- Фото-подложка: Toyota ночью, Unsplash (автор Nelli Chaitanya), бесплатная лицензия Unsplash -->
+      <img class="hero__bg" src="images/hero-car.jpg" alt="" fetchpriority="high">
       <div class="container hero__inner">
         <div class="hero__text">
           <h1 class="hero__title">Б/у&nbsp;запчасти с авторазбора в&nbsp;Омске</h1>
@@ -76,7 +78,7 @@
             <span class="demo-mark">Позвоните или напишите в WhatsApp – скажем, есть ли деталь и сколько она стоит.</span>
           </p>
           <div class="hero__buttons">
-            <a href="tel:+79081045891" class="btn btn--accent">Позвонить</a>
+            <a href="tel:+79081045891" class="btn btn--accent btn--glow">Позвонить</a>
             <a href="https://wa.me/79081045891" class="btn btn--ghost" target="_blank" rel="noopener">Написать в WhatsApp</a>
           </div>
           <p class="hero__meta">
@@ -84,16 +86,20 @@
             Пн–пт 10:00–19:00, сб 10:00–17:00
           </p>
         </div>
+      </div>
+    </section>
 
-        <!-- Бирки с ценами из прайса компании в 2ГИС -->
-        <div class="tags" aria-label="Примеры цен">
+    <!-- ===== БЛОК: Полоса цен (бирки из прайса компании в 2ГИС) ===== -->
+    <section class="prices" aria-label="Примеры цен">
+      <div class="container">
+        <div class="tags">
           <div class="tag tag--1"><span class="tag__name">Генератор</span><span class="tag__price">2 700 ₽</span></div>
           <div class="tag tag--2"><span class="tag__name">Бампер</span><span class="tag__price">2 000 ₽</span></div>
           <div class="tag tag--3"><span class="tag__name">Стойка подвески в сборе</span><span class="tag__price">2 000 ₽</span></div>
           <div class="tag tag--4"><span class="tag__name">Руль</span><span class="tag__price">1 500 ₽</span></div>
           <div class="tag tag--5"><span class="tag__name">Обшивка потолка</span><span class="tag__price">2 700 ₽</span></div>
-          <p class="tags__note">Цены из прайса компании в 2ГИС на сентябрь 2026. Наличие и точную цену уточняйте по телефону.</p>
         </div>
+        <p class="tags__note">Цены из прайса компании в 2ГИС на сентябрь 2026. Наличие и точную цену уточняйте по телефону.</p>
       </div>
     </section>
 
@@ -104,18 +110,22 @@
 
         <div class="services">
           <article class="service">
+            <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg>
             <h3>Продаём б/у запчасти</h3>
             <p>Детали с машин, которые разбираем: от тросов и кнопок до генераторов и бамперов.</p>
           </article>
           <article class="service">
+            <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17H3v-5l2-5h11l4 5h1a1 1 0 0 1 1 1v4h-2"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/><path d="M9.5 17h5M3 12h17"/></svg>
             <h3>Выкупаем машины на запчасти</h3>
             <p>Позвоните и расскажите о машине. <span class="todo-mark">[УТОЧНИТЬ: какие машины берёте и как проходит оценка]</span></p>
           </article>
           <article class="service">
+            <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h12v10H2zM14 9h4l4 4v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
             <h3>Отправляем в другие города</h3>
             <p>Работаем с транспортными компаниями СДЭК, «Энергия» и ПЭК. До транспортной компании довезём бесплатно, упаковка может быть платной.</p>
           </article>
           <article class="service">
+            <svg class="service__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v6M12 15v6M3 12h6M15 12h6"/></svg>
             <h3>Продаём б/у колёса</h3>
             <p><span class="demo-mark">Подберём колёса и диски под вашу машину.</span></p>
           </article>

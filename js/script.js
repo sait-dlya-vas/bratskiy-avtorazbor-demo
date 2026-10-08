@@ -26,6 +26,19 @@ nav.querySelectorAll('a').forEach(function (link) {
   link.addEventListener('click', closeMenu);
 });
 
+// ----- Бирки с ценами качаются, когда появляются на экране -----
+const tags = document.querySelector('.tags');
+if (tags && 'IntersectionObserver' in window) {
+  tags.classList.add('will-swing');
+  const observer = new IntersectionObserver(function (entries) {
+    if (entries[0].isIntersecting) {
+      tags.classList.add('is-in');
+      observer.disconnect();
+    }
+  }, { threshold: 0.3 });
+  observer.observe(tags);
+}
+
 // ----- Форма заявки: собирает текст и открывает WhatsApp -----
 const form = document.getElementById('request-form');
 const errorBox = document.getElementById('form-error');
