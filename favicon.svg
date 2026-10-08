@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Значок сайта: оранжевый квадрат с буквой «Б» -->
+  <rect width="64" height="64" rx="12" fill="#ff7a1a"/>
+  <path fill="#1b1d21" fill-rule="evenodd" d="M18 12H46V20H27V29H35A11.5 11.5 0 0 1 35 52H18ZM27 37V44H35A3.5 3.5 0 0 0 35 37Z"/>
+</svg>
